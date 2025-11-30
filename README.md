@@ -61,7 +61,7 @@ docker compose up --build -d
 После запуска контейнеров необходимо создать таблицы в базе данных. Выполните команду (убедитесь, что у вас установлен `goose`):
 
 ```bash
-GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost user=user password=password dbname=api_db sslmode=disable" ~/go/bin/goose -dir migrations up
+GOOSE_DRIVER=postgres GOOSE_DBSTRING="host=localhost port=5432 user=postgres_user password=secret_password dbname=my_database sslmode=disable" ~/go/bin/goose -dir migrations up
 ```
 *(Если вы меняли настройки в .env, обновите строку подключения соответственно)*
 
