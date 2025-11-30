@@ -1,0 +1,29 @@
+# --- Binaries and build artifacts ---
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Binary directories
+bin/
+
+# Application binary names (to avoid committing compiled files)
+api-service
+main
+
+# --- Dependencies ---
+vendor/
+
+# Secrets
+.env
+
+# --- IDE and OS files ---
+.idea/
+.vscode/
+.DS_Store
+
+# --- Local API tests ---
+requests.http
